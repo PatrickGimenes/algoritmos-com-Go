@@ -6,9 +6,9 @@ import (
 )
 
 func TestSort(t *testing.T) {
-	arr := []int{5, 2, 4, 6, 1, 3}
+	lista := []int{5, 2, 4, 6, 1, 3}
 
-	sort := sort(arr)
+	sort := sort(lista)
 
 	esperado := []int{1, 2, 3, 4, 5, 6}
 
