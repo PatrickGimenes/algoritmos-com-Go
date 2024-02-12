@@ -6,8 +6,11 @@ import (
 
 func main() {
 
-	lista := []int{5, 4, 3, 2, 1} //lista a ser ordenada
-	fmt.Println(sort(lista))      //exibe a lista ordenada
+	lista := []int{54, 14, 38, 92, 1, 4, 48, 50, 77} //lista a ser ordenada
+	fmt.Println(lista)
+	fmt.Println(sort(lista)) //exibe a lista ordenada
+
+	fmt.Println(reverse_sort(lista))
 }
 
 // função que recebe um arry de tamanho indefinido do tipo inteiro e
@@ -30,8 +33,28 @@ func sort(lista []int) []int {
 		}
 		//quando elemento anterior não for maior que o próximo, então ele permanece na mesma posição
 		lista[i+1] = chave
+
 	}
 
 	//retorna a lista ordenada
+	return lista
+}
+
+func reverse_sort(lista []int) []int {
+
+	for j := 1; j < len(lista); j++ {
+		chave := lista[j]
+
+		i := j - 1
+		for i >= 0 && lista[i] < chave {
+
+			lista[i+1] = lista[i]
+			i--
+		}
+
+		lista[i+1] = chave
+
+	}
+
 	return lista
 }
