@@ -6,21 +6,21 @@ O algoritmo de ordenação por inserção é um dos algoritmos simples de ordena
 
 O algoritmo de ordenação por inserção é baseado em comparar elementos adjacentes e trocá-los até que a lista esteja completamente ordenada. Aqui está uma visão geral do funcionamento do algoritmo:
 
-Iteração sobre a lista: O algoritmo itera sobre todos os elementos da lista, começando do segundo elemento.
+1. Iteração sobre a lista: O algoritmo itera sobre todos os elementos da lista, começando do segundo elemento.
 
-Comparação e inserção: Para cada elemento, ele compara o elemento atual com os elementos à sua esquerda e o insere na posição correta.
+2. Comparação e inserção: Para cada elemento, ele compara o elemento atual com os elementos à sua esquerda e o insere na posição correta.
 
-Mover elementos: Se o elemento atual for menor do que o elemento à sua esquerda, ele é movido para a esquerda até encontrar a posição correta.
+3. Mover elementos: Se o elemento atual for menor do que o elemento à sua esquerda, ele é movido para a esquerda até encontrar a posição correta.
 
-Inserção: Finalmente, o elemento é inserido na posição correta, e o algoritmo avança para o próximo elemento.
+4. Inserção: Finalmente, o elemento é inserido na posição correta, e o algoritmo avança para o próximo elemento.
 
 Caso queira ver o algoritmo em funcionamente, veja esse [vídeo](https://youtu.be/8oJS1BMKE64?si=oQGcooR2xIovLyej).
 
 ## Complexidade do algoritmo
 
-Melhor caso: O(n) - quando a lista já está ordenada.
-Caso médio: O(n^2) - quando a lista está em ordem aleatória.
-Pior caso: O(n^2) - quando a lista está em ordem inversa.
+- Melhor caso: O(n) - quando a lista já está ordenada.
+- Caso médio: O(n^2) - quando a lista está em ordem aleatória.
+- Pior caso: O(n^2) - quando a lista está em ordem inversa.
 
 ## Conclusão
 
